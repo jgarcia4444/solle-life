@@ -10,7 +10,7 @@ const Navbar = () => {
             {text: "Buy", to: "#buy"},
             {text: "Join", to: "#join"},
         ]
-        return navObjects.map((navObject, i) => <a className="text-lg mr-16 text-white hover:text-lime-600 hover:animate-bounce active:animate-none" href={navObject.to}>{navObject.text}</a>)
+        return navObjects.map((navObject, i) => <a key={`${i}-${navObject.text}`} className="text-lg mr-16 text-white hover:text-lime-600 hover:animate-bounce active:animate-none" href={navObject.to}>{navObject.text}</a>)
     }
 
     return (
