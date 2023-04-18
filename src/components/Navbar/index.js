@@ -18,7 +18,6 @@ const Navbar = () => {
 
     const controlNavbar = () => {
         if (typeof window !== 'undefined') { 
-            console.log(window.scrollY);
           if (window.scrollY > 14) {
             setShowFixedNav(true); 
           } else if (window.scrollY < 15) { 
