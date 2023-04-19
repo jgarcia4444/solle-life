@@ -7,7 +7,7 @@ import healthCardImages from '../../config/healthCardImages';
 
 const Health = () => {
 
-    const {ashwagandha, yerbaMatte, holyBasil, detox, reindeerLichen, quality,} = healthCardImages;
+    const {ashwagandha, yerbaMatte, holyBasil, detox, reindeerLichen, quality, bodyLanguage, overcomingBarriers, setGoals, redBeetroot, thyme, mushrooms} = healthCardImages;
 
     const [selectedTabIndex, setSelectedTabIndex] = useState(0);
 
@@ -18,12 +18,12 @@ const Health = () => {
         {tabIndex: 1, title: "Benefits of a detox cleanse", text: "Our bodies can use a little bit of a deep cleanse every now and again as well. Most people in the health world call this a detox cleanse.", img: detox},
         {tabIndex: 1, title: "Reindeer Lichen - A Plant Source for Vitamin D", text: "It helps support our bones and muscles, keep our immune system healthy, regulate hormones, and even protect against certain diseases.", img: reindeerLichen},
         {tabIndex: 1, title: "Our Dedication to Quality", text: "Here at Solle Naturals, we want to provide you with the highest quality products available. Each raw ingredient we receive is tested to make sure it has everything we expect and has nothing we don't.", img: quality},
-        {tabIndex: 2, title: "The Power of Body Language", text: "Do you ever catch yourself slouching? Or maybe catch yourself making a really funny face? Or maybe even catch yourself making a fist when you feel angry?", img: ""},
-        {tabIndex: 2, title: "Overcoming Barriers to Success", text: "There are any number of people who have already created success, both in terms of business and in terms of self-care and health. They share what worked for them over and over in a generous way.", img: ""},
-        {tabIndex: 2, title: "Setting and Achieving Goals", text: "If you were to walk up to any person on the street and ask them if they have goals, almost everyone would certainly say yes. In fact, if you were to inquire about what these goals are, many would probably list off similar objectives:", img: ""},
-        {tabIndex: 3, title: "Red Beetroot - My favorite side dish", text: "I love red beets.  For the past few years I’ve been growing them in my garden and enjoying the greens in salads and the beet itself cut into cubes, boiled, and then mixed with a little butter and salt. ", img: ""},
-        {tabIndex: 3, title: "It's Time to Talk About Thyme", text: "Thyme is a popular herb that has been used for centuries to add flavor to food and treat medical conditions. It's an incredibly versatile herb, with many health benefits that make it worth adding to your diet.", img: ""},
-        {tabIndex: 3, title: "Why You Should Be Taking These 10 Mushrooms", text: "Are you looking for a way to improve your health and well-being? If so, you may want to consider mushrooms. Yes, that's right, mushrooms!", img: ""},
+        {tabIndex: 2, title: "The Power of Body Language", text: "Do you ever catch yourself slouching? Or maybe catch yourself making a really funny face? Or maybe even catch yourself making a fist when you feel angry?", img: bodyLanguage},
+        {tabIndex: 2, title: "Overcoming Barriers to Success", text: "There are any number of people who have already created success, both in terms of business and in terms of self-care and health. They share what worked for them over and over in a generous way.", img: overcomingBarriers},
+        {tabIndex: 2, title: "Setting and Achieving Goals", text: "If you were to walk up to any person on the street and ask them if they have goals, almost everyone would certainly say yes. In fact, if you were to inquire about what these goals are, many would probably list off similar objectives:", img: setGoals},
+        {tabIndex: 3, title: "Red Beetroot - My favorite side dish", text: "I love red beets.  For the past few years I’ve been growing them in my garden and enjoying the greens in salads and the beet itself cut into cubes, boiled, and then mixed with a little butter and salt. ", img: redBeetroot},
+        {tabIndex: 3, title: "It's Time to Talk About Thyme", text: "Thyme is a popular herb that has been used for centuries to add flavor to food and treat medical conditions. It's an incredibly versatile herb, with many health benefits that make it worth adding to your diet.", img: thyme},
+        {tabIndex: 3, title: "Why You Should Be Taking These 10 Mushrooms", text: "Are you looking for a way to improve your health and well-being? If so, you may want to consider mushrooms. Yes, that's right, mushrooms!", img: mushrooms},
     ];
 
     const renderHealthCards = () => {
