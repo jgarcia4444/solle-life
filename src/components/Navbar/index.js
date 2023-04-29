@@ -37,7 +37,7 @@ const Navbar = () => {
     },[lastScrollY]);
 
     return (
-        <div className={`w-full flex flex-row transition-all ${showFixedNav === true && "bg-lime-600 fixed top-0 left-0 p-2 shadow"}`}>
+        <div className={`w-full flex flex-row transition-all ${showFixedNav === true && "bg-lime-600 fixed top-0 left-0 p-2 shadow z-10"}`}>
             <div className="w-1/4 flex flex-row items-center justify-start">
                 <h4 className="text-white font-bold text-4xl"><a href="#">Solle Life</a></h4>
             </div>
