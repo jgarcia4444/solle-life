@@ -4,13 +4,13 @@ import {FiFacebook, FiInstagram} from 'react-icons/fi';
 const Header = () => {
 
     let icons = [
-        {label: "Instagram", icon: <FiInstagram color={"#fff"} size={32} />, alt: "Instagram", style:"bg-amber-700", to: ""},
-        {label: "Facebook", icon: <FiFacebook color={'#fff'} size={32} />, style:"bg-blue-500", to: ""},
+        {label: "Instagram", icon: <FiInstagram color={"#fff"} size={32} />, alt: "Instagram", style:"bg-amber-700", to: "https://www.instagram.com/solle_life_2/"},
+        {label: "Facebook", icon: <FiFacebook color={'#fff'} size={32} />, style:"bg-blue-500", to: "https://www.facebook.com/profile.php?id=100092326391281"},
     ]
     const renderSocialIcons = () => {
         return icons.map((iconInfo, i) => (
             <div className={` flex items-center justify-center w-14 h-14 rounded-lg ${iconInfo.style} cursor-pointer hover:shadow bg-opacity-80 hover:bg-opacity-100 `}>
-                <a target="_blank" key={`${i}-${iconInfo.label}`}>{iconInfo.icon}</a>
+                <a href={iconInfo.to} target="_blank" key={`${i}-${iconInfo.label}`}>{iconInfo.icon}</a>
             </div>
         )
         )
