@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Health from './components/Health';
 import Join from './components/Join';
+import Buy from './components/Buy';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         <Health />
         <About />
         <Join />
+        <Buy />
       </div>
     </div>
   );
