@@ -10,8 +10,8 @@ const Navbar = () => {
         let navObjects = [
             {text: "Health", to: "#health"},
             {text: "About", to: "#about"},
-            {text: "Buy", to: "#buy"},
             {text: "Join", to: "#join"},
+            {text: "Buy", to: "#buy"},
         ]
         return navObjects.map((navObject, i) => <a key={`${i}-${navObject.text}`} className="text-lg mr-16 text-white hover:text-lime-600 hover:animate-bounce active:animate-none" href={navObject.to}>{navObject.text}</a>)
     }

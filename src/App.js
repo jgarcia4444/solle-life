@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Health from './components/Health';
+import Join from './components/Join';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Header />
         <Health />
         <About />
+        <Join />
       </div>
     </div>
   );

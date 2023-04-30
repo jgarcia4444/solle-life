@@ -1,5 +1,7 @@
 import React from 'react'
+
 import VideoCard from '../VideoCard'
+import SectionTitle from '../SectionTitle'
 
 const About = () => {
 
@@ -16,7 +18,7 @@ const About = () => {
 
     return (
         <div className="w-full mt-20" id="about">
-            <h2 className="text-white text-6xl font-bold text-left">About</h2>
+            <SectionTitle text={"About"} />
             <div className="w-full flex flex-row flex-wrap mt-12 justify-center items-center">
                 {renderVideos()}
             </div>

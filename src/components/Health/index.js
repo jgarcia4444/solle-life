@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import HealthTabs from './HealthTabs';
 import HealthCard from './HeathCard';
+import SectionTitle from '../SectionTitle';
 
 import healthCardImages from '../../config/healthCardImages';
 
@@ -33,7 +34,7 @@ const Health = () => {
 
     return (
         <div id="health" className="w-full mt-20">
-            <h2 className="text-white text-6xl font-bold text-left">Health</h2>
+            <SectionTitle text={"Health"} />
             <HealthTabs selectedTabIndex={selectedTabIndex} setSelectedTabIndex={setSelectedTabIndex}/>
             <div className="w-full flex flex-row flex-wrap justify-center mt-8">
                 {renderHealthCards()}
