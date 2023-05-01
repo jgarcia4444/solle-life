@@ -19,7 +19,7 @@ const About = () => {
     return (
         <div className="w-full mt-20" id="about">
             <SectionTitle text={"About"} />
-            <div className="w-full flex flex-row flex-wrap mt-12 justify-center items-center">
+            <div className="w-full flex flex-row flex-wrap mt-8 justify-center items-between">
                 {renderVideos()}
             </div>
         </div>
