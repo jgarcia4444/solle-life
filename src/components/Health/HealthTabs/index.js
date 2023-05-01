@@ -13,7 +13,7 @@ const HealthTabs = ({selectedTabIndex, setSelectedTabIndex}) => {
     }
 
     const renderTabs = () => {
-        return tabs.map((text, i) => <div onClick={() => setSelectedTabIndex(i)} key={`${i}-${text}`} className={` ${selectedTab(i)} w-1/4 py-1 text-lg cursor-pointer border-2 border-white transition-all hover:bg-white hover:text-lime-600`}>{text}</div>)
+        return tabs.map((text, i) => <div onClick={() => setSelectedTabIndex(i)} key={`${i}-${text}`} className={` ${selectedTab(i)} w-1/4 py-1 text-sm lg:text-lg cursor-pointer border-2 border-white transition-all hover:bg-white hover:text-lime-600 flex items-center justify-center text-center`}>{text}</div>)
     }
 
     return (
