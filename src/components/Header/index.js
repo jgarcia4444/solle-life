@@ -17,15 +17,15 @@ const Header = () => {
     }
 
     return (
-        <header className="w-full flex flex-row justify-between mt-20">
-            <div className="lg:w-3/5 flex flex-col justify-start items-start">
+        <header className="w-full flex flex-row justify-between mt-20 flex-wrap">
+            <div className="w-full lg:m-0  mb-4 lg:w-3/5 flex flex-col justify-start items-start">
                 <h1 className="text-8xl text-left text-white font-bold">Solle Life</h1>
-                <p className="text-left text-white text-2xl">Natural supplements for almost every need</p>
-                <div className="w-full flex flex-row h-full justify-start items-end gap-4">
+                <p className="text-left text-white text-2xl mb-4 lg:mb-0">Natural supplements for almost every need</p>
+                <div className="w-full flex flex-row h-full justify-start items-end gap-4 ">
                     {renderSocialIcons()}
                 </div>
             </div>
-            <div className="lg:w-2/5 flex flex-col justify-start items-center ">
+            <div className="w-full lg:w-2/5 flex flex-col justify-start items-center ">
                 <img className="lg:w-full rounded shadow hover:shadow-lg" src="https://cdn11.bigcommerce.com/s-zsd73psd0i/product_images/uploaded_images/herbal-supplement-guide2.jpg" />
             </div>
         </header>
