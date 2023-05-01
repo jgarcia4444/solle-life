@@ -3,6 +3,8 @@ import React, {useState, useEffect} from 'react';
 
 import {FiMenu} from 'react-icons/fi';
 
+import Logo from '../../media/logo/Solle-Life.png';
+
 const Navbar = () => {
 
     const [showFixedNav, setShowFixedNav] = useState(false);
@@ -16,7 +18,7 @@ const Navbar = () => {
             {text: "Join", to: "#join"},
             {text: "Buy", to: "#buy"},
         ]
-        return navObjects.map((navObject, i) => <a key={`${i}-${navObject.text}`} className={`text-lg ${showMiniNav === true ? "text-lime-300 bg-lime-300 bg-opacity-30 py-1 mt-2" : "mr-16 text-white"}  ${showFixedNav === true ? "hover:text-black hover:shadow" : "hover:text-lime-600"}  hover:animate-bounce active:animate-none `} href={navObject.to}>{navObject.text}</a>)
+        return navObjects.map((navObject, i) => <a key={`${i}-${navObject.text}`} className={`text-lg ${showMiniNav === true ? "text-lime-300 bg-lime-300 bg-opacity-30 py-1 mt-2" : "mr-16 text-white"}  ${showFixedNav === true ? "hover:text-black hover:shadow lg:hover:shadow-none" : "hover:text-lime-600"}  hover:animate-bounce active:animate-none `} href={navObject.to}>{navObject.text}</a>)
     }
 
     const controlNavbar = () => {
@@ -42,7 +44,9 @@ const Navbar = () => {
     return (
         <div className={`w-full flex flex-row transition-all ${showFixedNav === true && "bg-lime-600 fixed top-0 left-0 p-2 shadow z-10"}`}>
             <div className="w-1/4 flex flex-row items-center justify-start">
-                <h4 className="text-white font-bold text-lg md:text-4xl"><a href="#">Solle Life</a></h4>
+                <a href="#">
+                    <img className={`rounded-2xl ${showFixedNav === true ? "w-1/4 " : "lg:w-1/3"} transition-all duration-700`} src={Logo} alt="Company Logo" />
+                </a>
             </div>
             <div className="w-3/4 md:flex flex-row items-center justify-end hidden">
                 {renderNavLinks()}
