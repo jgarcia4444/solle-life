@@ -9,7 +9,7 @@ const HealthCard = ({cardInfo}) => {
     useEffect(() => {
         setTimeout(() => {
             setFade(true);
-        }, 50)   
+        }, 250)   
     })
 
     return (
