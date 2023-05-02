@@ -18,7 +18,7 @@ const Navbar = () => {
             {text: "Join", to: "#join"},
             {text: "Buy", to: "#buy"},
         ]
-        return navObjects.map((navObject, i) => <a key={`${i}-${navObject.text}`} className={`text-lg ${showMiniNav === true ? "text-lime-300 bg-lime-300 bg-opacity-30 py-1 mt-2" : "mr-16 text-white"}  ${showFixedNav === true ? "hover:text-black hover:shadow lg:hover:shadow-none" : "hover:text-lime-600"}  hover:animate-bounce active:animate-none `} href={navObject.to}>{navObject.text}</a>)
+        return navObjects.map((navObject, i) => <a onClick={() => setShowMiniNav(!showMiniNav)}  key={`${i}-${navObject.text}`} className={`text-lg ${showMiniNav === true ? "text-lime-300 bg-lime-300 bg-opacity-30 py-1 mt-2" : "mr-16 text-white"}  ${showFixedNav === true ? "hover:text-black hover:shadow lg:hover:shadow-none" : "hover:text-lime-600"}  hover:animate-bounce active:animate-none `} href={navObject.to}>{navObject.text}</a>)
     }
 
     const controlNavbar = () => {
